@@ -1,7 +1,7 @@
 /* 
     This is a CSS comment. Please add your name to this file below:
     
-    NAME: 
+    NAME: Zachary Goodpaster
 */
 /* -------------------------------------------------- */
 /* 
@@ -323,16 +323,16 @@ footer{
 /* content, padding, borders, margin, dev tools, inline, & block elements */
 
 /* For both links in the section */
-/* 
-    TO DO: add styles to both links in this section that will:
-        - make these links display as block-level elements
-        - remove the underline
-        - align the text to the center
-        - make the font display at 1.1rem
-        - make the text bold
-        - tell these to be 50% wide in the container
-        - add the large box shadow
-*/
+#section2 a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 50%;
+    box-shadow: var(--box-shadow-lg);
+}
+
 /* ADD SELECTOR AND STYLES HERE */
 
 /* For the first link in this section: */
@@ -361,23 +361,11 @@ footer{
 }
 
 /* For the last paragraph in the section */
-/* 
-    TO DO: add styles to the last paragraph in this section that will:
-        - make the background the teal-rgba color
-        - add a 4 pixel dark gray border that is dashed
-        - add margin:
-            - top: 16px
-            - right: 60px
-            - bottom: 32px
-            - left: 8px
-        - add padding: 
-            - top: 32px
-            - right: 8px
-            - bottom: 16px
-            - left: 60px
-*/
 #section2 div > p:last-of-type{
-    
+    background-color: var(--teal-rgba);
+    border: 4px dashed var(--dk-gray);
+    margin: 16px 60px 32px 8px;
+    padding: 32px 8px 16px 60px;
 }
 
  /* For the div wrapped around that paragraph to show the space its taking up within its container */
@@ -386,15 +374,12 @@ footer{
 }
 
 /* To change the styles on each of those links when you're hovering over them with a mouse */
-/* 
-    TO DO: add styles to the first link on hover in this section that will:
-        - make the background the dk-blue color
-        - make the text white
-        - change the color of the border to the lt-blue color
-        - add the small box shadow, using the variable in the root
-*/
-#section2 a:first-of-type:hover{
 
+#section2 a:first-of-type:hover{
+    background-color: var(--dk-blue);
+    color: var(--white);
+    border-color: var(--lt-blue);
+    box-shadow: var(--box-shadow-sm);
 }
 
 #section2 a:last-of-type:hover{
